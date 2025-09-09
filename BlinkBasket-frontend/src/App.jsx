@@ -1,4 +1,5 @@
 import './App.css'
+import React from 'react';
 import { TypewriterEffect } from './components/ui/typewriter-effect'
 import { TypewriterEffectSmooth } from './components/ui/typewriter-effect';
 import { Button } from './components/ui/button';
