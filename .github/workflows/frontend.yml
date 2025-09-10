@@ -23,19 +23,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: pnpm
-
-      - name: Install pnpm globally
-        run: npm install -g pnpm
+          cache: npm
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Run Tests
-        run: pnpm test
+        run: npm test
 
       - name: Build Project
-        run: pnpm run build --if-present
+        run: npm run build --if-present
 
   test:
     runs-on: ubuntu-latest
@@ -51,13 +48,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: pnpm
-
-      - name: Install pnpm globally
-        run: npm install -g pnpm
+          cache: npm
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Run tests
-        run: pnpm test
+        run: npm test
