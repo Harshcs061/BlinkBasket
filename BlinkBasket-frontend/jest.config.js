@@ -3,7 +3,7 @@ export default {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.[tj]sx?$': 'babel-jest',
+    '^.+\\.[jt]sx?$': ['babel-jest', { configFile: './babel.config.cjs' }],
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
