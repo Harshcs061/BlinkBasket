@@ -1,0 +1,12 @@
+name: Placeholder Workflow
+
+on:
+  push:
+    branches:
+      - frontend
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is a placeholder"
